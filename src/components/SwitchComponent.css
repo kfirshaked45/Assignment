@@ -1,0 +1,28 @@
+.random {
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.clicked-left {
+  color: white;
+  background-color: rgb(214, 121, 44);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.clicked-right {
+  color: white;
+  background-color: rgb(214, 121, 44);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search {
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.mid {
+  margin-top: 100px;
+}
