@@ -1,42 +1,41 @@
 import React, { useState } from "react";
-
+import SearchPage from "./utilcomponents/SearchPage";
+import CategoriesPage from "./utilcomponents/CategoriesPage";
+import classNames from "classnames";
 import "./SwitchComponent.css";
-import RandomBtn from "./RandomBtn";
-import SearchBtn from "./SearchBtn";
 
 function SwitchComponent() {
-  const [showRandom, setShowRandom] = useState(false);
-  const [showSearch, setShowSearch] = useState(false);
+  const [showRandom, setShowRandom] = useState(true);
+
   const onClickRandom = () => {
-    setShowRandom(!showRandom);
-    setShowSearch(false);
-    const newClass = document.getElementById("random");
-    newClass.className = "clicked-left";
-    const oldClass = document.getElementById("search");
-    oldClass.className = "search";
+    setShowRandom(true);
   };
+
   const onClickSearch = () => {
     setShowRandom(false);
-    setShowSearch(!showSearch);
-    const name = document.getElementById("search");
-    name.className = "clicked-right";
-    const oldClass = document.getElementById("random");
-    oldClass.className = "random";
   };
+
+  const searchClassNames = classNames("search-button", {
+    "clicked-right": !showRandom,
+  });
+
+  const randomClassNames = classNames("random-button", {
+    "clicked-left": showRandom,
+  });
 
   return (
     <div className="mid">
-      <ul>
+      <ul className="ul">
         <li>
-          <button className="random" onClick={onClickRandom} id="random">
+          <button className={randomClassNames} onClick={onClickRandom}>
             Random
           </button>
-          <button className="search" onClick={onClickSearch} id="search">
+          <button className={searchClassNames} onClick={onClickSearch}>
             Search
           </button>
         </li>
-        {showRandom ? <h2>{<RandomBtn />}</h2> : null}
-        {showSearch ? <h2>{<SearchBtn />}</h2> : null}
+        {showRandom ? <h2>{<CategoriesPage />}</h2> : null}
+        {!showRandom ? <h2>{<SearchPage />}</h2> : null}
       </ul>
     </div>
   );

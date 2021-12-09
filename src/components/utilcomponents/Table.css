@@ -1,0 +1,37 @@
+.custom-filter {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.custom-ascending {
+  rotate: 180deg;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.joke {
+  border-top-style: dashed;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: dashed;
+  border-width: 6px;
+  margin: auto auto;
+  height: 60%;
+
+  text-align: center;
+  line-height: 40px;
+  margin: auto auto;
+  vertical-align: middle;
+  margin-top: 20px;
+  border-color: #2e8bc5;
+  color: #2e8bc5;
+  background-color: white;
+  padding: 2%;
+  font-size: large;
+}
+
+.custom-down {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+}
