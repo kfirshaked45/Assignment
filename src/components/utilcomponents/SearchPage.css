@@ -1,0 +1,42 @@
+.box-div {
+  background-color: rgba(255, 151, 65, 0.431);
+  background-position: center;
+  width: 50%;
+  height: 120px;
+  margin: auto auto;
+  position: relative;
+}
+
+.custom-input {
+  padding-right: 8%;
+  text-justify: center;
+  text-align: left;
+  margin-right: 5%;
+  line-height: 40px;
+}
+.custom-button {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(214, 121, 44);
+  border: 2px solid rgb(214, 121, 44);
+  font-size: 16px;
+  margin: 16px 0;
+  width: 20%;
+  padding: 15px 26px;
+  cursor: pointer;
+}
+
+.custom-label {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.custom-name {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.custom-category-label {
+  padding-right: 1%;
+  margin-right: 5px;
+  padding-top: 5px;
+}

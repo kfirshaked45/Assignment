@@ -4,31 +4,10 @@
 .chuckimg {
   position: absolute;
   top: 220px;
-  left: 44.5%;
+  left: 43.1%;
 }
 .chuckwallpaper {
   width: 100%;
   height: 350px;
   position: relative;
-}
-button {
-  text-decoration: none;
-  color: rgb(214, 121, 44);
-  background-color: white;
-  border: 2px solid rgb(214, 121, 44);
-
-  font-size: 16px;
-  margin: 16px 0;
-  padding: 15px 26px;
-}
-button:active {
-  background-color: rgb(214, 121, 44);
-  color: white;
-}
-button:hover {
-  background-color: rgb(214, 121, 44);
-  color: white;
-}
-ul {
-  list-style-type: none;
 }

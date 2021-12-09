@@ -1,5 +1,6 @@
 import "./App.css";
 import SwitchComponent from "./components/SwitchComponent";
+import ChuckSmallImg from "./components/svgs/chucksmall.svg";
 
 function App() {
   return (
@@ -9,11 +10,7 @@ function App() {
         alt="chuckwp"
         className="chuckwallpaper"
       ></img>
-      <img
-        src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small.png"
-        alt="minichuck"
-        className="chuckimg"
-      ></img>
+      <img src={ChuckSmallImg} alt="small" className="chuckimg"></img>
       <SwitchComponent />
     </div>
   );
